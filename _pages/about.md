@@ -13,4 +13,9 @@ I am advised by [Aaron R. Dinner](https://dinner-group.uchicago.edu/) at the Uni
 
 My research broadly lies at the intersection of statistical mechanics, molecular simulation, and machine learning.
 
+## Honors and Fellowships
+
+- **Josef Fried Graduate Fellowship**, Department of Chemistry, University of Chicago, 2026-2027. Awarded in recognition of excellence in research.
+- **[Neubauer Family Distinguished Doctoral Fellow](https://grad.uchicago.edu/fellowships/neubauer-fellows/)**, University of Chicago, 2024-present.
+
 Links: [Google Scholar](https://scholar.google.com/citations?user=OOckHoEAAAAJ&hl=en) / [GitHub](https://github.com/weizhouwangw) / [ORCID](https://orcid.org/0009-0004-6749-3003)
