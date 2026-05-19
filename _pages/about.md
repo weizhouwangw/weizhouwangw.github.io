@@ -7,11 +7,11 @@ redirect_from:
   - /about.html
 ---
 
-I am a PhD student in theoretical chemistry at the University of Chicago, advised by [Aaron R. Dinner](https://dinner-group.uchicago.edu/) at the University of Chicago and [Jonathan Weare](https://cims.nyu.edu/~weare/) at New York University.
+I am a PhD student in theoretical chemistry at the University of Chicago, advised by [Aaron R. Dinner](https://dinner-group.uchicago.edu/) and [Jonathan Weare](https://cims.nyu.edu/~weare/).
 
-My research develops generative and probabilistic sampling methods for molecular simulation and statistical physics. I am particularly interested in diffusion- and flow-based generative models, Gibbs sampling, and posterior inference for accelerating molecular sampling, path-integral quantum statistics, and physically constrained scientific simulation.
+My research develops generative and probabilistic sampling methods for molecular simulation and statistical physics. I am particularly interested in diffusion/flow-based molecular sampling, Gibbs sampling, posterior inference, and path-integral quantum statistics.
 
-Recent projects include generative Gibbs sampling for path-integral quantum statistics and inference-time composition of diffusion priors with explicit physical contexts.
+Recent projects include generative Gibbs sampling for recovering quantum statistics from classical simulations and inference-time composition of diffusion priors with explicit physical contexts.
 
 [Download CV](/files/CV_Weizhou_Wang.pdf) / [Google Scholar](https://scholar.google.com/citations?user=OOckHoEAAAAJ&hl=en) / [GitHub](https://github.com/weizhouwangw) / [ORCID](https://orcid.org/0009-0004-6749-3003)
 
