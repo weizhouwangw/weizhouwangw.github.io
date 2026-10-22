@@ -47,12 +47,12 @@ layout: default
       <section class="page__content" itemprop="text">
         {{ content }}
 
-        {% if page.citation or page.paperurl or page.codeurl or page.slidesurl or page.bibtexurl %}
+        {% if page.paperurl or page.codeurl or page.slidesurl or page.bibtexurl %}
           {% assign paper_label = page.paper_label | default: "Paper" %}
           {% assign code_label = page.code_label | default: "Code" %}
           {% assign slides_label = page.slides_label | default: "Slides" %}
           {% assign bibtex_label = page.bibtex_label | default: "BibTeX" %}
-          <p style="font-size: smaller">{% if page.citation %}Recommended citation: {{ page.citation }}{% endif %}{% if page.paperurl or page.codeurl or page.slidesurl or page.bibtexurl %}{% if page.citation %}<br />{% endif %}{% assign shown_link = false %}{% if page.paperurl %}<a href="{{ page.paperurl }}">{{ paper_label }}</a>{% assign shown_link = true %}{% endif %}{% if page.codeurl %}{% if shown_link %} | {% endif %}<a href="{{ page.codeurl }}">{{ code_label }}</a>{% assign shown_link = true %}{% endif %}{% if page.slidesurl %}{% if shown_link %} | {% endif %}<a href="{{ page.slidesurl }}">{{ slides_label }}</a>{% assign shown_link = true %}{% endif %}{% if page.bibtexurl %}{% if shown_link %} | {% endif %}<a href="{{ page.bibtexurl }}">{{ bibtex_label }}</a>{% endif %}{% endif %}</p>
+          <p style="font-size: smaller">{% if page.paperurl or page.codeurl or page.slidesurl or page.bibtexurl %}{% assign shown_link = false %}{% if page.paperurl %}<a href="{{ page.paperurl }}">{{ paper_label }}</a>{% assign shown_link = true %}{% endif %}{% if page.codeurl %}{% if shown_link %} | {% endif %}<a href="{{ page.codeurl }}">{{ code_label }}</a>{% assign shown_link = true %}{% endif %}{% if page.slidesurl %}{% if shown_link %} | {% endif %}<a href="{{ page.slidesurl }}">{{ slides_label }}</a>{% assign shown_link = true %}{% endif %}{% if page.bibtexurl %}{% if shown_link %} | {% endif %}<a href="{{ page.bibtexurl }}">{{ bibtex_label }}</a>{% endif %}{% endif %}</p>
         {% endif %}
 
         {% if page.link %}<div><a href="{{ page.link }}" class="btn">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}

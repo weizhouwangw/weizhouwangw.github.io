@@ -87,10 +87,10 @@ author:
 publication_category:
   conference_papers:
     title: 'Conference Papers'
-  journal_articles:
-    title: 'Journal Articles'
   preprints:
     title: 'Preprints'
+  journal_articles:
+    title: 'Other Publications'
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/ for social media previews
@@ -240,7 +240,7 @@ collections:
     output: false
     permalink: /:collection/:path/
   talks:
-    output: false
+    output: true
     permalink: /:collection/:path/
 
 

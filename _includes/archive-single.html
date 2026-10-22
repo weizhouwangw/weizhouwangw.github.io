@@ -52,12 +52,12 @@
     <p class="archive__item-excerpt" itemprop="description"><p>{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}<strong><a href="{{ base_path }}{{ post.url }}" rel="permalink"> Read more</a></strong></p></p>
     {% endif %}
     
-    {% if post.citation or post.paperurl or post.codeurl or post.slidesurl or post.bibtexurl %}
+    {% if post.paperurl or post.codeurl or post.slidesurl or post.bibtexurl %}
       {% assign paper_label = post.paper_label | default: "Paper" %}
       {% assign code_label = post.code_label | default: "Code" %}
       {% assign slides_label = post.slides_label | default: "Slides" %}
       {% assign bibtex_label = post.bibtex_label | default: "BibTeX" %}
-      <p>{% if post.citation %}Recommended citation: {{ post.citation }}{% endif %}{% if post.paperurl or post.codeurl or post.slidesurl or post.bibtexurl %}{% if post.citation %}<br />{% endif %}{% assign shown_link = false %}{% if post.paperurl %}<a href="{{ post.paperurl }}">{{ paper_label }}</a>{% assign shown_link = true %}{% endif %}{% if post.codeurl %}{% if shown_link %} | {% endif %}<a href="{{ post.codeurl }}">{{ code_label }}</a>{% assign shown_link = true %}{% endif %}{% if post.slidesurl %}{% if shown_link %} | {% endif %}<a href="{{ post.slidesurl }}">{{ slides_label }}</a>{% assign shown_link = true %}{% endif %}{% if post.bibtexurl %}{% if shown_link %} | {% endif %}<a href="{{ post.bibtexurl }}">{{ bibtex_label }}</a>{% endif %}{% endif %}</p>
+      <p>{% if post.paperurl or post.codeurl or post.slidesurl or post.bibtexurl %}{% assign shown_link = false %}{% if post.paperurl %}<a href="{{ post.paperurl }}">{{ paper_label }}</a>{% assign shown_link = true %}{% endif %}{% if post.codeurl %}{% if shown_link %} | {% endif %}<a href="{{ post.codeurl }}">{{ code_label }}</a>{% assign shown_link = true %}{% endif %}{% if post.slidesurl %}{% if shown_link %} | {% endif %}<a href="{{ post.slidesurl }}">{{ slides_label }}</a>{% assign shown_link = true %}{% endif %}{% if post.bibtexurl %}{% if shown_link %} | {% endif %}<a href="{{ post.bibtexurl }}">{{ bibtex_label }}</a>{% endif %}{% endif %}</p>
     {% endif %}
 
   </article>
