@@ -4,7 +4,10 @@
   {% assign words = page.content | strip_html | number_of_words %}
 {% endif %}
 
-{% if site.words_per_minute %}
+{% assign fixed_minutes = post.read_time_minutes | default: page.read_time_minutes %}
+{% if fixed_minutes %}
+  {{ fixed_minutes }} {{ site.data.ui-text[site.locale].minute_read | default: "minute read" }}
+{% elsif site.words_per_minute %}
   {% if words < 180 %}
 	  {{ site.data.ui-text[site.locale].less_than | default: "less than" }} 1 {{ site.data.ui-text[site.locale].minute_read | default: "minute read" }}
 	{% elsif words < 360 %}
